@@ -1,10 +1,27 @@
 body {
     color: white;
 }
-
+h2 {
+    color: black;
+}
 .row {
+    height: 40px;
+
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
     background-color: blue;
-    height: 40px;    
 }
 
 p {
@@ -12,7 +29,18 @@ p {
     justify-content: center;
     padding-top: 5px;
 }
-.container-fluid>.row {
+.container-fluid>.col-xs-1,
+.container-fluid>.col-xs-2,
+.container-fluid>.col-xs-3,
+.container-fluid>.col-xs-4,
+.container-fluid>.col-xs-5,
+.container-fluid>.col-xs-6,
+.container-fluid>.col-xs-7,
+.container-fluid>.col-xs-8,
+.container-fluid>.col-xs-9,
+.container-fluid>.col-xs-10,
+.container-fluid>.col-xs-11,
+.container-fluid>.col-xs-12 {
     margin: 5px;
     background-color: greenyellow;
     height: 30px;
@@ -24,4 +52,12 @@ p {
 
 .container-fluid>.row>* {
     border: solid 1px blue ;
+}
+.container {
+    padding: 15px 0 ;
+
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
