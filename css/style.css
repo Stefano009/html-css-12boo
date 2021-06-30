@@ -28,7 +28,9 @@ p {
     justify-content: center;
     padding-top: 10px;
 }
-.container-fluid>.col-xs-1,
+
+.container.fluid>div[class* = "col-xs-"]{
+/* .container-fluid>.col-xs-1,
 .container-fluid>.col-xs-2,
 .container-fluid>.col-xs-3,
 .container-fluid>.col-xs-4,
@@ -39,7 +41,7 @@ p {
 .container-fluid>.col-xs-9,
 .container-fluid>.col-xs-10,
 .container-fluid>.col-xs-11,
-.container-fluid>.col-xs-12 {
+.container-fluid>.col-xs-12 { */
     margin: 5px;
     background-color: greenyellow;
 }
