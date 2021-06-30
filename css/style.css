@@ -1,12 +1,10 @@
 body {
     color: white;
+    font-size: small;
 }
-h2 {
+h2,
+h3 {
     color: black;
-}
-.row {
-    height: 40px;
-
 }
 
 .col-xs-1,
@@ -22,12 +20,13 @@ h2 {
 .col-xs-11,
 .col-xs-12 {
     background-color: blue;
+    height: 40px;
 }
 
 p {
     display: flex;
     justify-content: center;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 .container-fluid>.col-xs-1,
 .container-fluid>.col-xs-2,
@@ -43,7 +42,6 @@ p {
 .container-fluid>.col-xs-12 {
     margin: 5px;
     background-color: greenyellow;
-    height: 30px;
 }
 
 .row>* {
@@ -51,13 +49,38 @@ p {
 }
 
 .container-fluid>.row>* {
-    border: solid 1px blue ;
+    border: solid 2px blue ;
+    background-color: greenyellow;
+    margin-top: 5px;
+    height: 30px;
 }
 .container {
-    padding: 15px 0 ;
+    padding-top: 30px ;
 
 }
 
-.reverse {
-    flex-direction: row-reverse;
+.container.top,
+.container.middle,
+.container.bot {
+    padding-top: 0;
+}
+
+.container.middle>.row,
+.container.bot>.row  {
+    height: 80px;
+}
+
+.container.middle>.row>.col-xs-6:last-child{
+    margin-top: 20px;
+}
+.container.bot>.row>.col-xs-6:last-child{
+    margin-top: 41px;
+    border-bottom: 0;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+.space-between {
+    justify-content: space-between;
 }
