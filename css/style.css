@@ -1,0 +1,27 @@
+body {
+    color: white;
+}
+
+.row {
+    background-color: blue;
+    height: 40px;    
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.container-fluid>.row {
+    margin: 5px;
+    background-color: greenyellow;
+    height: 30px;
+}
+
+.row>* {
+    border: solid 1px white ;
+}
+
+.container-fluid>.row>* {
+    border: solid 1px blue ;
+}
