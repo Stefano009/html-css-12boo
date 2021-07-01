@@ -9,18 +9,15 @@ h3 {
 
 div[class*="col-xs"] {
     background-color: blue;
-    height: 40px;
+    min-height: 40px;
 }
 p {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 8px;
+    overflow: hidden;
 }
 
-.container.fluid>div[class* = "col-xs-"]{
-    margin: 5px;
-    background-color: greenyellow;
-}
 
 .row>* {
     border: solid 1px white ;
@@ -28,9 +25,8 @@ p {
 
 .container-fluid>.row>* {
     border: solid 2px blue ;
-    background-color: greenyellow;
-    margin-top: 5px;
-    height: 30px;
+    background-color: green;
+    
 }
 .container {
     padding-top: 30px ;
@@ -43,6 +39,7 @@ p {
     padding-top: 0;
 }
 
+.container.top>.row,
 .container.middle>.row,
 .container.bot>.row  {
     height: 80px;
